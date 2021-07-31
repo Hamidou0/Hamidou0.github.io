@@ -1,0 +1,131 @@
+@import './_config';
+
+.home {
+    position: relative;
+    width: 100%;
+    
+    //height: 100%;
+    //padding-bottom: 10rem;
+    //overflow: hidden;
+
+    
+    color: $text_color;
+    background: white;
+
+    &__text {
+        
+        padding-top: 9rem;
+        padding-bottom: 8rem;
+        min-height: 60vh;
+        text-align: left;
+        background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba(#f1a9a0, 0.2)
+        ),
+        url('../img/xianxia_wall_2.jpeg') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        h1, h2{
+            font-size: 3vw;
+            margin-left: 2rem;
+            @media only screen and (min-width: 940px) {
+                font-size: 40px;
+            }
+        }
+
+        .name{
+            font-size: 7vw;
+            @media only screen and (min-width: 940px) {
+                font-size: 3vw;
+            }
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+
+.flashy-text {
+    text-align: center;
+    font-family: cursive;
+    font-size: 4vw;
+    padding: 4rem;
+}
+
+
+.skills_icons {
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    //grid-template-rows: repeat(3, minmax(0, 1fr));
+    //padding: 0 2rem;
+    //grid-gap: 5px;
+    overflow: hidden;
+    background: white;
+
+    width:auto;
+    height:300px;
+      
+    @media only screen and (max-width: 768px) {
+        width:auto;
+        height:180px;
+    }
+
+
+
+    img {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: block;
+        
+
+        @media only screen and (max-width: 768px) {
+            width:auto;
+            height:130px;
+        }
+        
+    }
+}
+.grid-items {
+    overflow: hidden;
+}
+
+
+#contact_btn{
+    margin-left: 5rem;
+}
+
+#resume_pic {
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+#resume_download {
+    text-decoration: none;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(241, 221, 221);
+    padding: auto;
+    background-color: $bright_color;
+    color: $text_color;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 2.3vw;
+    @media only screen and (min-width: 1200px) {
+        font-size: 30px;
+    }
+    border-radius: 25px 35px 25px 35px;
+   
+ 
+}
+
+#home_about {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

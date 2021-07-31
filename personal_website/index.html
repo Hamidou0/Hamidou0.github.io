@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+  <head>
+    <title>Hamidou</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+  </head>
+ 
+  <body> 
+    
+    <header>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <div class="logo">
+        <img src="../img/logo.png" alt="">
+      </div>
+
+      
+      <nav class="nav">
+      </nav>
+
+      <script>
+        $(function(){
+          $("nav").load("../common/navbar.html");
+        });
+        </script>
+      
+      
+      
+
+    </header>
+    
+    <main>
+      <section class="home">
+        <div class="home__text">
+          <h2>Hello there, my name is</h1>
+          <h1 class="name">Hamidou Cisse</h2>
+          <h2>Entrepreneur, Designer and Developper</h1>
+          <h2>Ready to tackle anything</h1>
+        </div>
+
+        <h2 class="flashy-text">I played around with these</h2>
+        <div class="skills_icons">
+          <img class="grid-items fadein" src="../img/java.png" alt="java">
+          <img class="grid-items fadein" src="../img/javascript.png" alt="javascript">
+          <img class="grid-items fadein" src="../img/python.png" alt="python">
+          <img class="grid-items fadein" src="../img/android_studio.png" alt="android_studio">
+          <img class="grid-items fadein" src="../img/html.png" alt="html">
+          <img class="grid-items fadein" src="../img/css.png" alt="css">
+          <img class="grid-items fadein" src="../img/mysql.png" alt="mysql">
+          <img class="grid-items fadein" src="../img/react.png" alt="react">
+
+        </div>
+
+        
+      </section>
+      
+    </main>
+
+    
+
+  </body>
+
+  <footer></footer>
+</html>
+
+<script src="js/main.js"></script>
+<script>
+  $(function(){
+    $("footer").load("../common/footer.html");
+  });
+  </script>

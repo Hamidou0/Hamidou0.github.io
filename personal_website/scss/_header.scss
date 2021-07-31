@@ -1,0 +1,37 @@
+@import './config';
+
+header {
+    //position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%; 
+    background: $secondary_color;
+    //margin-bottom: 1rem;
+
+    display: flex;
+    
+    font-size: 1rem;
+
+    a:link {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        
+        &:hover{
+            animation-name: nav_btn;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    ul {
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    li{
+        margin-left: 2rem;
+    }
+    
+}
+
+
