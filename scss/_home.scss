@@ -35,12 +35,15 @@
             @media only screen and (min-width: 940px) {
                 font-size: 40px;
             }
+            @media only screen and (max-width: 768px) {
+                font-size: 19px
+            }
         }
 
         .name{
             font-size: 7vw;
-            @media only screen and (min-width: 940px) {
-                font-size: 3vw;
+            @media only screen and (max-width: 768px) {
+                font-size: 35px
             }
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -51,6 +54,9 @@
     text-align: center;
     font-family: cursive;
     font-size: 4vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 35px;
+    }
     padding: 4rem;
 }
 
@@ -71,7 +77,10 @@
       
     @media only screen and (max-width: 768px) {
         width:auto;
-        height:180px;
+        height:auto;
+        padding: 20px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
     }
 
 

@@ -184,14 +184,20 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .home__text h1, .home__text h2 {
+    font-size: 19px;
+  }
+}
+
 .home__text .name {
   font-size: 7vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (max-width: 768px) {
   .home__text .name {
-    font-size: 3vw;
+    font-size: 35px;
   }
 }
 
@@ -200,6 +206,12 @@
   font-family: cursive;
   font-size: 4vw;
   padding: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .flashy-text {
+    font-size: 35px;
+  }
 }
 
 .skills_icons {
@@ -217,7 +229,12 @@
 @media only screen and (max-width: 768px) {
   .skills_icons {
     width: auto;
-    height: 180px;
+    height: auto;
+    padding: 20px;
+    -ms-grid-columns: (minmax(0, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    -ms-grid-rows: (minmax(0, 1fr))[2];
+        grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -344,10 +361,10 @@ header {
   top: 0;
   width: 100%;
   background: #9a9a9b;
+  max-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem;
 }
 
 header a:link {
@@ -370,8 +387,26 @@ header ul {
   padding-top: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  header ul {
+    padding-top: 0;
+  }
+}
+
 header li {
   margin-left: 2rem;
+}
+
+.logo {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    height: auto;
+    width: 40px;
+  }
 }
 
 .menu-btn {
@@ -513,11 +548,6 @@ body {
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.logo {
-  padding-top: 1rem;
-  padding-left: 1rem;
-}
-
 .fadein {
   -webkit-animation: fadeIn ease 0.8s forwards;
           animation: fadeIn ease 0.8s forwards;
@@ -535,7 +565,6 @@ footer {
   bottom: 0;
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   background-color: #9a9a9b;
 }
 

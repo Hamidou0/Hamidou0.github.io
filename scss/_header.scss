@@ -6,11 +6,11 @@ header {
     top: 0;
     width: 100%; 
     background: $secondary_color;
-    //margin-bottom: 1rem;
+    max-height: 80px;
 
     display: flex;
     
-    font-size: 1rem;
+    //font-size: 1rem;
 
     a:link {
         color: rgb(255, 255, 255);
@@ -27,11 +27,26 @@ header {
     ul {
         padding-right: 2rem;
         padding-top: 2rem;
+        @media only screen and (max-width: 768px) {
+            padding-top: 0;
+        }
     }
     li{
         margin-left: 2rem;
     }
     
+}
+
+.logo{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    img{
+        @media only screen and (max-width: 768px) {
+            height: auto;
+            width: 40px;
+        }   
+    }
+     
 }
 
 
