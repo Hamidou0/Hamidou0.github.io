@@ -1,24 +1,20 @@
 @import './_config';
 
-.home {
-    position: relative;
-    width: 100%;
-    
-    //height: 100%;
-    //padding-bottom: 10rem;
-    //overflow: hidden;
+.txt{
+    h1, h2{
+        font-size: 3vw;
+        margin-left: 2rem;
+        @media only screen and (min-width: 940px) {
+            font-size: 40px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 19px
+        }
+    }
+}
 
-    
-    color: $text_color;
-    background: white;
-
-    &__text {
-        
-        padding-top: 9rem;
-        padding-bottom: 8rem;
-        min-height: 60vh;
-        text-align: left;
-        background: 
+.wuxia_back{
+    background: 
         linear-gradient(
             to right,
             rgba($primary-color, 0.9),
@@ -28,6 +24,26 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+   
+    //height: 100%;
+    //padding-bottom: 10rem;
+    //overflow: hidden;
+
+    background: white;
+    color: $text_color;
+
+    &__text {
+        
+        padding-top: 9rem;
+        padding-bottom: 8rem;
+        min-height: 60vh;
+        text-align: left;
+        
 
         h1, h2{
             font-size: 3vw;
