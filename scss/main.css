@@ -180,7 +180,6 @@
 }
 
 .home {
-  position: relative;
   width: 100%;
   background: white;
   color: #182541;
@@ -577,13 +576,21 @@ body {
           animation: fadeIn ease 0.8s forwards;
 }
 
+.nice_padding {
+  padding: 20px 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nice_padding {
+    padding: 10px 19px;
+  }
+}
+
 main {
-  position: abs;
-  margin: 0 auto;
+  min-height: calc(100vh - 162px);
 }
 
 footer {
-  position: absolute;
   width: 100%;
   padding-top: 1rem;
   background-color: #9a9a9b;

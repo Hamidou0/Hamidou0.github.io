@@ -47,22 +47,33 @@ body{
     
 }
 
+.nice_padding{
+    padding:20px 35px;
+
+    @media only screen and (max-width: 768px) {
+        padding:10px 19px;
+    }
+}
+
 
 main{
-    position: abs;
-    //margin-top: 5rem;
+
+
+    //position: relative;
+    
+    min-height: calc(100vh - 162px );
     
     //padding-bottom: 15rem;
     //min-height: 100vh;
     //overflow: visible;
 
-    margin: 0 auto;
+    //margin: 0 auto;
    
 }
 
 footer {
     
-    position: absolute;
+   //position: absolute;
     //left: 0;
     //bottom: 0;
     width: 100%;
