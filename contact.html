@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
+        </div>
+        <div class="logo">
+          <img src="../img/logo.png" alt="">
+        </div>
+        <nav class="nav"></nav>
+        <script>
+          $(function(){
+            $("nav").load("../common/navbar.html");
+          });
+          </script>
+      </header>
+      <main>
+          <h2 class="txt">Contact Me</h2>
+          <div class="sec">
+            <form class="gform email_form" name="email_sent" action="https://script.google.com/macros/s/AKfycbzwQW0jZSJuVujPsVReIn_BRLLFCm4945G1WHiOX09BhuaLXPW09VGl3O5icxWV3VqS/exec" method="post">
+                <div>
+                    Name: <input id="name" type="text" name="name" required>
+                </div>
+                <div>
+                    Email: <input id="email" type="email" name="email" placeholder="abc@cba.abc" required>
+                </div>
+                <div id="message_div">
+                    Message: <br><textarea id="message" name="message" placeholder ="message..." required></textarea>
+                </div>
+                
+                <div>
+                    <input class="nice_button" type="submit" value="Submit">
+                </div>
+                <div style="display:none" class="thankyou_message txt">
+                    <h2><em>Thanks</em> for contacting me!</h2>
+                </div>
+                
+              </form>
+          </div>
+      </main>
+
+      <footer></footer>
+
+    
+</body>
+</html>
+
+<script src="js/main.js"></script>
+<script data-cfasync="false" type="text/javascript" src="js/form-sub.js"></script>
+<script>
+  $(function(){
+    $("footer").load("../common/footer.html");
+  });
+  </script>

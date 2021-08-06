@@ -3,7 +3,7 @@
     border-style: ridge;
   }
   45% {
-    background-color: #edf1f1;
+    background-color: #f7fcfc;
   }
   70% {
     padding: 0.1rem;
@@ -26,7 +26,7 @@
     border-style: ridge;
   }
   45% {
-    background-color: #edf1f1;
+    background-color: #f7fcfc;
   }
   70% {
     padding: 0.1rem;
@@ -107,7 +107,7 @@
     border-style: ridge;
   }
   45% {
-    background-color: #edf1f1;
+    background-color: #f7fcfc;
   }
   70% {
     padding: 0.1rem;
@@ -154,26 +154,26 @@
   }
 }
 
-.txt h1, .txt h2 {
+.txt {
   font-size: 3vw;
   margin-left: 2rem;
 }
 
 @media only screen and (min-width: 940px) {
-  .txt h1, .txt h2 {
+  .txt {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .txt h1, .txt h2 {
+  .txt {
     font-size: 19px;
   }
 }
 
 .wuxia_back {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(237, 241, 241, 0.9)), to(rgba(241, 169, 160, 0.2))), url("../img/xianxia_wall_2.jpeg");
-  background: linear-gradient(to right, rgba(237, 241, 241, 0.9), rgba(241, 169, 160, 0.2)), url("../img/xianxia_wall_2.jpeg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(247, 252, 252, 0.9)), to(rgba(241, 169, 160, 0.2))), url("../img/xianxia_wall_2.jpeg");
+  background: linear-gradient(to right, rgba(247, 252, 252, 0.9), rgba(241, 169, 160, 0.2)), url("../img/xianxia_wall_2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -282,9 +282,8 @@
   background-repeat: no-repeat;
 }
 
-#resume_download {
+.nice_button {
   text-decoration: none;
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,9 +301,15 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  #resume_download {
+  .nice_button {
     font-size: 30px;
   }
+}
+
+.nice_button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #4165b1;
 }
 
 #home_about {
@@ -328,7 +333,7 @@
     border-style: ridge;
   }
   45% {
-    background-color: #edf1f1;
+    background-color: #f7fcfc;
   }
   70% {
     padding: 0.1rem;
@@ -444,7 +449,7 @@ header li {
   top: 2.5rem;
   height: 4px;
   width: 30px;
-  background: #edf1f1;
+  background: #f7fcfc;
 }
 
 .menu-btn__burger::before {
@@ -454,7 +459,7 @@ header li {
   top: -0.5rem;
   height: 4px;
   width: 30px;
-  background: #edf1f1;
+  background: #f7fcfc;
 }
 
 .menu-btn__burger::after {
@@ -464,7 +469,7 @@ header li {
   top: 0.5rem;
   height: 4px;
   width: 30px;
-  background: #edf1f1;
+  background: #f7fcfc;
 }
 
 .menu-btn__burger.open {
@@ -506,7 +511,7 @@ header li {
     width: 100vw;
     height: 100vh;
     opacity: 0.95;
-    background: #edf1f1;
+    background: #f7fcfc;
     visibility: visible;
   }
   .nav.open .menu-nav {
@@ -526,7 +531,7 @@ header li {
             justify-content: center;
     font-size: 7vw;
     height: 100vh;
-    background: #edf1f1;
+    background: #f7fcfc;
   }
   .nav.open .menu-nav__item {
     padding-top: 2rem;
@@ -549,15 +554,16 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  background: #edf1f1;
+  background: #f7fcfc;
 }
 
 .pb {
-  background: #edf1f1;
+  background: #f7fcfc;
 }
 
 .sec {
   border-radius: 10px;
+  width: 80%;
   margin: 2vw;
   padding: 3vw;
   background: #f0f0ef;
@@ -571,9 +577,40 @@ body {
   }
 }
 
+#message_div {
+  margin-top: 20px;
+}
+
+#message {
+  width: 60vw;
+  height: 40vh;
+  font-size: 25px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 468px) {
+  #message {
+    font-size: 13px;
+  }
+}
+
 .fadein {
   -webkit-animation: fadeIn ease 0.8s forwards;
           animation: fadeIn ease 0.8s forwards;
+}
+
+.email_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
 }
 
 .nice_padding {
@@ -587,7 +624,17 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 162px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 149px);
 }
 
 footer {

@@ -1,7 +1,7 @@
 @import './_config';
 
 .txt{
-    h1, h2{
+    
         font-size: 3vw;
         margin-left: 2rem;
         @media only screen and (min-width: 940px) {
@@ -10,7 +10,7 @@
         @media only screen and (max-width: 768px) {
             font-size: 19px
         }
-    }
+    
 }
 
 .wuxia_back{
@@ -127,9 +127,9 @@
     background-repeat: no-repeat;   
 }
 
-#resume_download {
+.nice_button {
     text-decoration: none;
-    width: 20%;
+    //width: 20%;
     display: flex;
     justify-content: center;
     border: 2px solid rgb(241, 221, 221);
@@ -143,6 +143,11 @@
         font-size: 30px;
     }
     border-radius: 25px 35px 25px 35px;
+
+    &:hover{
+        transform: scale(1.1);
+        color:lighten($text_color, 30%);
+    }
    
  
 }
