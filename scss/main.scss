@@ -32,6 +32,7 @@ body{
     border-radius: 10px;
     width: 80%;
     margin: 2vw;
+    font-size: 21px;
     padding: 3vw;
     background: rgb(240, 240, 239);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -54,6 +55,11 @@ body{
         font-size: 13px;
     }
     text-align: left;
+}
+
+#about_me_main{
+    display: flex;
+    overflow: hidden;
 }
 
 
@@ -107,6 +113,7 @@ footer {
 
 
     padding-top: 1rem;
+    padding-left: 14px;
     //text-align: justify;
     background-color: $secondary_color;
 

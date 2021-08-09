@@ -280,6 +280,8 @@
 #resume_pic {
   background-size: cover;
   background-repeat: no-repeat;
+  width: auto;
+  height: auto;
 }
 
 .nice_button {
@@ -291,12 +293,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 2px solid #f1dddd;
-  padding: auto;
+  padding: 5px;
   background-color: #ee9014;
   color: #182541;
   margin: 10px;
   font-weight: 700;
-  font-size: 2.3vw;
+  font-size: 20px;
   border-radius: 25px 35px 25px 35px;
 }
 
@@ -565,6 +567,7 @@ body {
   border-radius: 10px;
   width: 80%;
   margin: 2vw;
+  font-size: 21px;
   padding: 3vw;
   background: #f0f0ef;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -592,6 +595,13 @@ body {
   #message {
     font-size: 13px;
   }
+}
+
+#about_me_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .fadein {
@@ -640,6 +650,7 @@ main {
 footer {
   width: 100%;
   padding-top: 1rem;
+  padding-left: 14px;
   background-color: #9a9a9b;
 }
 
