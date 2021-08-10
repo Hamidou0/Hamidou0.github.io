@@ -58,8 +58,16 @@
 
 
 .nav{
+    a{
+        font-size: 24px;
+    }
+    
+    a:visited{
+        color:$primary_color;
+    }
     ul li {
         display: inline;
+
         //background: set-text-color($primary_color);
     }
 
@@ -89,7 +97,7 @@
                 font-size: 7vw;
                 
                 height: 100vh;
-                background: $primary-color;
+                background: $text_color;
                 //padding: 2rem;
 
                 &__item {
