@@ -511,6 +511,10 @@ header li {
   .nav {
     visibility: hidden;
   }
+  .nav * {
+    margin: 0;
+    padding: 0;
+  }
   .nav.open {
     position: fixed;
     top: 0;
